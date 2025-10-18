@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bepul Intensiv</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="island mirror-shape">
+      31 oktabr - 19:00 | 1-2 noyabr - 11:00
+    </div>
+    <h1 class="title">
+      Onlayn biznesda <br />
+      <span
+        >0 dan
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="#b2c8ff"
+        >
+          <path
+            d="M13.293 6.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 1 1-1.414-1.414L17.586 14H4a1 1 0 1 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 0-1.414z"
+          />
+        </svg>
+        natijagacha</span
+      >
+      <br />qadamlarni bepul o’rganing
+    </h1>
+
+    <div class="timer-wrapper">
+      <div class="timer">
+        <div class="digit mirror-shape" id="min">10</div>
+        <div class="digit mirror-shape" id="sec">00</div>
+      </div>
+      <div class="info-icon mirror-shape" id="openSpeaker">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-.25-4.5h.5a.75.75 0 0 0 .75-.75V11a.75.75 0 0 0-.75-.75h-.5A.75.75 0 0 0 11 11v3.75a.75.75 0 0 0 .75.75zM12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="photo-wrapper mirror-shape">
+      <div class="photo-space">
+        <img class="image" src="./img/image.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="info-bubble mirror-shape">
+      <img class="gift-image" src="./img/gift.webp" width="52" alt="" />
+      <div class="gift-text">
+        0 dan biznes boshlash va bor biznes daromadi 5x ga oshirish uchun maxsus
+        video darslik
+      </div>
+    </div>
+
+    <button class="cta" id="openModal">BEPUL QATNASHISH</button>
+
+    <div class="modal" id="modal">
+      <div class="modal-content mirror-shape">
+        <h2>Ro‘yxatdan o‘tish</h2>
+        <div class="input-wrapper">
+          <div class="styled-input">
+            <input type="text" placeholder="Ismingiz" />
+          </div>
+          <div class="input-group">
+            <span class="input-prefix">+998</span>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="XX XXX XX XX"
+              maxlength="9"
+              pattern="[0-9]{9}"
+              oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+            />
+          </div>
+        </div>
+        <button class="submit-btn" style="margin-top: 20px">Yuborish</button>
+      </div>
+    </div>
+
+    <div class="modal" id="speakerModal">
+      <div class="modal-content speaker-modal mirror-shape">
+        <h2>Dostonjon Soyibov</h2>
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            padding: 20px;
+            text-align: left;
+          "
+          class="mirror-shape"
+        >
+          9 yillik biznes va sotuv tajribaga ega
+        </p>
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            padding: 20px;
+            text-align: left;
+          "
+          class="mirror-shape"
+        >
+          4500 dan ortiq tadbirkorlarga yordam bergan
+        </p>
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            padding: 20px;
+            text-align: left;
+          "
+          class="mirror-shape"
+        >
+          "Buyukzamon" korxonasi asoschisi
+        </p>
+
+        <h2>Intensiv sizga nima beradi?</h2>
+
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            text-align: left;
+            padding: 20px;
+          "
+          class="mirror-shape"
+        >
+          2025-yilda tekshirilgan va sarmoyasiz, oson daromadga chiqish
+          imkoniyati mavjud bo’lgan biznes sohalar bilan tanishasiz
+        </p>
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            text-align: left;
+            padding: 20px;
+          "
+          class="mirror-shape"
+        >
+          Qanday qilib biznesni to’g’ri boshlash va doimiy mijoz oqimini
+          qurishni o’rganasiz
+        </p>
+        <p
+          style="
+            font-size: 14px;
+            color: var(--accent);
+            text-align: left;
+            padding: 20px;
+          "
+          class="mirror-shape"
+        >
+          Qanday qilib amalda majud biznes daromadini 5x ga oshirish yo’llari
+          haqida malumot olasiz
+        </p>
+        <button
+          class="submit-btn close-btn"
+          onclick="this.closest('.modal').style.display='none'"
+        >
+          Yopish
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
