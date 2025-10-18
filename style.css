@@ -19,7 +19,7 @@ body {
   color: var(--text);
   text-align: center;
   min-height: 100vh;
-  padding: 40px 20px 40px 20px;
+  padding: 10px 20px 40px 20px;
   overflow-x: hidden;
   backdrop-filter: blur(40px) saturate(180%) brightness(1.1);
 }
@@ -106,13 +106,12 @@ input {
 .photo-wrapper {
   position: relative;
   width: 340px;
-  height: 340px;
+  height: 300px;
   margin: 20px auto;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px) saturate(200%);
-
   overflow: hidden;
 }
 .photo-space {
@@ -159,7 +158,7 @@ input {
   display: block;
   width: 100%;
   height: 80px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: none;
   border-radius: 28px;
   font-size: 18px;
