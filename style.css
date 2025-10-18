@@ -18,8 +18,8 @@ body {
   );
   color: var(--text);
   text-align: center;
-  min-height: 100vh;
-  padding: 10px 20px 40px 20px;
+  min-height: 100dvh;
+  padding: 10px 20px calc(env(safe-area-inset-bottom) + 10px) 20px;
   overflow-x: hidden;
   backdrop-filter: blur(40px) saturate(180%) brightness(1.1);
 }
