@@ -133,8 +133,8 @@ input {
   gap: 15px;
 }
 .gift-text {
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 11px;
   color: var(--text);
   text-align: left;
 }
