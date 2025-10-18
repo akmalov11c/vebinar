@@ -36,15 +36,12 @@ document.getElementById("openSpeaker").onclick = () =>
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbw9mX6uc0nJ6qEScMAMG3lBK5ZOrZyUcD5nNQiNgma1HCuaUsBfCFksYBjJj3FkmLzklQ/exec";
 
-// attach one-click submit
 submitBtn.addEventListener("click", function () {
   const name = document.querySelector(".styled-input input").value.trim();
   const phone = document.getElementById("phone").value.trim();
 
-  // close keyboard (blur inputs)
   document.querySelectorAll("input").forEach((input) => input.blur());
 
-  // prepare form-like payload
   const params = new URLSearchParams();
   params.append("name", name);
   params.append("phone", "+998" + phone);
@@ -53,12 +50,9 @@ submitBtn.addEventListener("click", function () {
     type: "application/x-www-form-urlencoded",
   });
 
-  // send data in background
   navigator.sendBeacon(scriptURL, blob);
 
-  // instant modal close
   modal.style.display = "none";
 
-  // instant redirect (no wait)
-  window.location.href = "./thankyou.html"; // change page if needed
+  window.location.href = "./thankyou.html";
 });
