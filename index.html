@@ -4,9 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bepul Intensiv</title>
-    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="preload"
+      href="./style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./style.css" /></noscript>
+
     <link rel="preload" as="image" href="./img/image.webp" />
-    <link rel="preload" as="image" href="./img/gift.webp" />
   </head>
   <body>
     <div class="island mirror-shape">
@@ -39,6 +46,7 @@
           height="100%"
           style="object-fit: contain"
           fetchpriority="high"
+          decoding="async"
           alt="photo"
         />
       </div>
@@ -171,6 +179,6 @@
       </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
