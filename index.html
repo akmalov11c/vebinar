@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bepul Intensiv</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preload" as="image" href="./img/image.webp" />
+    <link rel="preload" as="image" href="./img/gift.webp" />
   </head>
   <body>
     <div class="island mirror-shape">
       31 oktabr - 19:00 | 1-2 noyabr - 11:00
     </div>
     <h1 class="title">
-      Onlayn biznesda <br />
-      <span
-        >0 dan
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="#b2c8ff"
-        >
-          <path
-            d="M13.293 6.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 1 1-1.414-1.414L17.586 14H4a1 1 0 1 1 0-2h13.586l-4.293-4.293a1 1 0 0 1 0-1.414z"
-          />
-        </svg>
-        natijagacha</span
-      >
-      <br />qadamlarni bepul o’rganing
+      <span>KONKRETIKA</span> - biznesni 0 dan boshlash yoki daromadni <br />
+      <span>3x oshirish!</span>
     </h1>
 
     <div class="timer-wrapper">
@@ -45,14 +32,31 @@
     </div>
 
     <div class="photo-wrapper mirror-shape">
-      <div class="photo-space"></div>
+      <div class="photo-space">
+        <img
+          src="./img/image.webp"
+          width="100%"
+          height="100%"
+          style="object-fit: contain"
+          fetchpriority="high"
+          alt="photo"
+        />
+      </div>
     </div>
 
     <div class="info-bubble mirror-shape">
-      <img class="gift-image" src="./img/gift.webp" width="36" alt="" />
+      <img
+        class="gift-image"
+        src="./img/gift.webp"
+        loading="lazy"
+        width="36"
+        height="36"
+        alt=""
+      />
       <div class="gift-text">
-        Sinovdan o'tgan 5 ta biznes g'oya va 7 kunda biznes foydasini oshirish
-        haqida maxsus video darslik telegram kanalda!
+        2025 yilda sinovdan o'tgan va minimal pul bilan boshlanadigan 5 ta
+        biznes g'oya + 7 kunda foydani 2 barobar ko'paytirish video darsi
+        Telegram kanalda sovg'a sifatida!
       </div>
     </div>
 

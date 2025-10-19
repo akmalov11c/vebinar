@@ -118,7 +118,7 @@ input {
 .photo-space {
   position: absolute;
   inset: 0;
-  background: url("./img/image.webp") center/contain no-repeat;
+  /* background: url("./img/image.webp") center/contain no-repeat; */
 }
 
 .image {
